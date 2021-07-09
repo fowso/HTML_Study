@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>주문 내역</title>
+  <style>
+    button{
+      color: red;
+      background-color: silver;
+    }
+    table {
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    }
+    td,th{
+      border: 1px solid #ccc;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  
+  <fieldset>
+    <legend>상품 선택</legend>
+    <p><b>주문할 상품을 선택해 주세요</b></p>
+    <ul>
+      <li><label for="checkbox" value="s_3">혼밥용 3kg</label>
+      <input type="number">개</li>
+      <li><label for="checkbox" value="s_5">혼밥용 5kg</label>
+      <input type="number">개</li>
+      <li><label for="checkbox" value="f_3">가족용 3kg</label>
+      <input type="number">개</li>
+      <li><label for="checkbox" value="f_5">가족용 5kg</label>
+        <input type="number">개</li>
+    </ul>
+    <p><b>포장 선택</b></p>
+    <ul>
+      <li><input type="radio" name="gift" value="yse">선물 포장</li>
+      <li><input type="radio" name="gift" value="yse">선물 포장안함</li>
+    </ul>
+    <hr>
+  </fieldset>
+  <fieldset>
+    <legend>주문하는곳</legend>
+      <ul>
+        <li><label for="goods">주문 상품</label>
+        <input type="text" id="goods" value="주문할 상품이름 적는곳"></li>
+        <li><label for="name">이름</label>
+        <input type="text" id="name" value="주문자 이름을 적는곳"></li>
+        <li><label for="addr">배송주소</label>
+        <input type="text" id="addr" value="시까지만 기재"></li>
+        <li><label for="email">이메일</label>
+        <input type="email" id="edge" value="이메일쓰는곳"></li>
+        <li><label for="phone">전화번호</label>
+        <input type="tel" id value="전화번호 쓰는곳"></li>
+      </ul>
+<button>주문하기</button>
+  </fieldset><hr>
+  <fieldset>
+    <legend>배송 정보</legend>
+    <ul>
+      <li><label for="name">이름</label>
+      <input type="text" value="뚜비"></li>
+      <li><label for="addr">주소</label>
+      <input type="text" value="서울시"></li>
+      <li><label for="email">이메일</label>
+        <input type="email" value="dlqjs@nans.com"></li>
+        <li><label for="phone">연락처</label>
+        <input type="tel" value="010-1234-5678"></li>
+    </ul>
+  </fieldset>
+  <table>
+    <caption><h2>오전 주문건</h2></caption>
+    <tr>
+      <th>이름</th>
+      <th>주소</th>
+      <th>이메일</th>
+      <th>연락처</th>
+      <th>주문상품</th>
+      <th>수량</th>
+      <th>포장여부</th>
+    </tr>
+    <tr>
+      <td>뚜비</td>
+      <td>서울시</td>
+      <td>asldq@asnd.com</td>
+      <td>010-2939-3912</td>
+      <td>가족용 3kg</td>
+      <td>3</td>
+      <td>선물포장</td>
+    </tr>
+  </table>
+</body>
+</html>

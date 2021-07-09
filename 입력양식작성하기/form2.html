@@ -4,6 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>폼 삽입하기</title>
+  <style> table {
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+  }
+  td,th {
+    border: 1px solid #ccc;
+    padding: 10px;
+  }</style>
 </head>
 <body>
   <form action="">
@@ -30,14 +38,14 @@
         <input type="tel " id="phone">
       </li>
     </ul>
-  </form><hr>
+  </form><br><hr><br>
   <form>
     <fieldset>
       <legend>상품 선택</legend>
       <p><b>주문할 상품을 선택해 주세요.</b></p>
       <ul>
         <li>
-          <label for="checkbox" value="s_3">혼밥용 3KG</label>
+          <label for="checkbox" value="s_3">혼밥용 3kg</label>
           <input type="number">개
         </li>
         <li>
@@ -45,7 +53,7 @@
           <input type="number">개
         </li>
         <li>
-          <label for="checkbox" value="f_3">가족용 3KG</label>
+          <label for="checkbox" value="f_3">가족용 3kg</label>
           <input type="number">개
         </li>
         <li>
@@ -58,27 +66,63 @@
         <li><label><input type="radio" name="gift" value=yes>선물 포장</label></li>
         <li><label><input type="radio" name="gift" value=no>선물 포장 안함</label></li>
       </ul>
-    </fieldset>
+    </fieldset><br><hr><br>
     <fieldset>
       <legend>배송 정보</legend>
       <ul>
         <li>
           <label for="user-name">이름</label>
-          <input type="text" id="user-name">
+          <input type="text" id="user-name" value="보라돌이">
         </li>
         <li>
           <label for="addr">주소</label>
-          <input type="text" id="addr">
+          <input type="text" id="addr" value="서울시">
         </li>
         <li>
           <label for="email">이메일</label>
-          <input type="email" id=email>
+          <input type="email" id=email value="dsld@abc.com">
         </li>
         <li>
           <label for="phone">연락처</label>
-          <input type="tel" id="phone">
+          <input type="tel" id="phone" value="010-1234-1234">
         </li>
       </ul>
+    </fieldset>
+    <fieldset>
+      <legend>주문내역</legend>
+      <table>
+        <caption><h2>오전고객 주문건</h2></caption>
+        <tr>
+          <th>이름</th>
+          <th>주소</th>
+          <th>이메일</th>
+          <th>연락처</th>
+          <th>주문상품</th>
+          <th>수량</th>
+          <th>포장여부</th>
+        </tr>
+
+        <tr>
+        <td>보라돌이</td>
+        <td>서울시</td>
+        <td>asld@abc.com</td>
+        <td>010-1234-1234</td>
+        <td>혼밥용 3kg</td>
+        <td>1개</td>
+        <td>선물 포장 안함</td>
+        </tr>
+
+        <tr>
+          <td>뚜비</td>
+          <td>대전시</td>
+          <td>dk12@abc.com</td>
+          <td>010-4321-7890</td>
+          <td>가족용 5kg</td>
+          <td>3개</td>
+          <td>선물 포장</td>
+        </tr>
+
+      </table>
     </fieldset>
   </form>
 </body>
